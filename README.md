@@ -1,13 +1,12 @@
 # Radiologix: AI-Powered Radiology Assistant
 
 ## Overview
-Radiologix is a full-stack AI radiology tool that analyzes chest X-rays, classifies 14 conditions, and segments affected areas with heatmaps. It uses EfficientNet-B1 (72.37% test accuracy), a fine-tuned Tiny Llama model with RAG, and Whisper for multilingual support. Users can upload X-ray images, receive detailed reports, and export them as PDFs.
+Radiologix is a full-stack AI radiology tool that analyzes chest X-rays, classifies 14 conditions, and segments affected areas with heatmaps. It uses EfficientNet-B1 (72.37% test accuracy), a fine-tuned Tiny Llama model with RAG for support. Users can upload X-ray images, receive segmented reports.
 
 ## Features
 - **Classification**: Detects 14 chest X-ray conditions (e.g., Atelectasis, Pneumonia) using the NIH Chest X-ray dataset.
 - **Segmentation**: Generates heatmaps for affected areas.(using UNET)
-- **Full-Stack**: Built with React+Vite, Django+FastAPI, and SQL.
-- **PDF Reports**: Exportable reports with classification and segmentation results.
+- **Full-Stack**: Built with React+Vite, Django, and SQL.
 - **Performance**:
   - Train Accuracy: 92%
   - Validation Accuracy: 72%
