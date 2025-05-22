@@ -1,0 +1,10 @@
+jupyter
+timm
+pandas
+numpy
+opencv-python
+albumentations
+scikit-learn
+matplotlib
+seaborn
+segment-anything

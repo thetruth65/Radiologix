@@ -1,0 +1,79 @@
+/* Container for centered content */
+.app-container {
+  @apply min-h-screen flex flex-col;
+}
+
+/* Navbar styling */
+.navbar {
+  @apply fixed top-0 w-full z-50 shadow-lg;
+}
+
+/* Footer styling */
+.footer {
+  @apply mt-auto;
+}
+
+/* Card styling for features on HomePage */
+.feature-card {
+  @apply bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105;
+}
+
+/* Button styling */
+.btn-primary {
+  @apply bg-blue-500 text-white px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-blue-600 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 text-white px-6 py-3 rounded-full hover:bg-gray-600 transition-colors;
+}
+
+.btn-report {
+  @apply bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors;
+}
+
+.btn-chatbot {
+  @apply bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition-colors;
+}
+
+/* Input styling */
+.input-field {
+  @apply w-full p-2 mb-4 border rounded dark:bg-gray-600 dark:text-white focus:ring-2 focus:ring-blue-500;
+}
+
+/* Image styling for reports */
+.report-image {
+  @apply mx-auto mb-4 w-full max-w-md rounded-lg shadow-md;
+}
+
+/* Chatbot message styling */
+.chat-message {
+  @apply p-3 rounded-lg max-w-xs;
+}
+
+.chat-message-user {
+  @apply bg-blue-500 text-white ml-auto;
+}
+
+.chat-message-bot {
+  @apply bg-gray-200 dark:bg-gray-600 mr-auto;
+}
+
+/* Theme transition */
+.dark {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .feature-card {
+    @apply p-4;
+  }
+
+  .report-image {
+    @apply max-w-xs;
+  }
+
+  .navbar .container {
+    @apply flex-col space-y-4;
+  }
+}

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+
+# Large files or datasets
+*.h5
+*.pth
+*.pkl
+data/
+models/
+
+# Media (if you don’t want to upload large files)
+*.mp4
+*.avi
+*.mov
+
+# Misc
+*.log
+*.DS_Store
